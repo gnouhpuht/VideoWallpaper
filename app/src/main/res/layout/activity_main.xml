@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/set_video_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/set_wall_pager"
+        android:text="set wall paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/check_voive"
+        android:text="Check voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
