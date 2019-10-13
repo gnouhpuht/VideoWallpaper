@@ -42,6 +42,7 @@ public class VideoWallpaper extends WallpaperService {
         videoPath = path;
         System.out.println("video path！"+videoPath);
         Intent intent = new Intent(WallpaperManager.ACTION_CHANGE_LIVE_WALLPAPER);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(WallpaperManager.EXTRA_LIVE_WALLPAPER_COMPONENT, new ComponentName(context, VideoWallpaper.class));
         context.startActivity(intent);
     }
